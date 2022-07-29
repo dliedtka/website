@@ -36,12 +36,26 @@ def get_last_edited_date():
 
 @app.route("/")
 def index():
+    '''
+    Render home page.
+    '''
     return render_template("index.html", date=get_last_edited_date())
 
 @app.route("/images/<filename>")
 def images(filename):
+    '''
+    Retrieve an image.
+    '''
     image_dir = f"{cur_dir}/images"
     return send_from_directory(image_dir, filename)
+
+@app.route("/docs/<filename>")
+def docs(filename):
+    '''
+    Retrieve a document.
+    '''
+    doc_dir = f"{cur_dir}/docs"
+    return send_from_directory(doc_dir, filename)
 
 
 if __name__ == "__main__":
