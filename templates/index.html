@@ -19,9 +19,9 @@
                 grew up in New Jersey and currently live in Washington, D.C.
             </p>
             <p class="text-left">
-                I am a 2018 graduate of the United States Naval Academy, 
-                completing a dual-major Bachelor of Science in Computer Science 
-                and Information Technology. As a 
+                I graduated with distinction from the United States Naval 
+                Academy in 2018, completing a dual-major Bachelor of Science in 
+                Computer Science and Information Technology. As a 
                 <a href="https://www.usna.edu/TridentProgram/index.php">Trident Scholar</a> 
                 at the Naval Academy, I conducted machine learning research with 
                 my adviser, 
@@ -31,12 +31,12 @@
                 <a href="https://navysports.com/roster.aspx?rp_id=7553">track and field team</a>.
             </p>
             <p class="text-left">
-                I am also a 2020 graduate of Stanford University, earning a 
-                Master of Science in Computer Science with a primary focus in 
-                artificial intelligience and a secondary focus in computer and 
-                network security. At Stanford, I was a member of the inaugural 
-                cohort of 
-                <a href="https://knight-hennessy.stanford.edu/program/scholars/2018/david-liedtka">Knight-Hennessy Scholars</a>.
+                I was a member of the inaugural cohort of 
+                <a href="https://knight-hennessy.stanford.edu/program/scholars/2018/david-liedtka">Knight-Hennessy Scholars</a>
+                at Stanford University, where I graduated in 2020 with a Master 
+                of Science in Computer Science. For my master's, I completed a 
+                primary focus in artificial intelligience and a secondary focus 
+                in computer and network security.
             </p>
             <p class="text-left">
                 I put this page together to highlight some of my past work and 
@@ -91,6 +91,13 @@
         <h3>Projects</h3><br><br><br>
         
         <p class="text-center">
+          I plan on importing some personal projects into this web interface 
+          soon (that was my motivation to switch from a static to a dynamic 
+          page). In the meantime, you can check some of my projects out on my 
+          <a href="https://github.com/dliedtka">Github</a>.
+        </p>
+        <!--
+        <p class="text-center">
           The following are personal projects in varying stages of completeness. 
           Try them out!
         </p>
@@ -142,7 +149,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
         <br><br><br>
 
         <p class="text-center">
@@ -216,7 +223,7 @@
         <br><br><br>
 
         <p class="text-center">
-          The following papers correspond to projects submitted during my coursework at Stanford.
+          The following papers correspond to projects submitted as part of my coursework at Stanford.
         </p>
         <div class="row">
           <div class="col-md-4">
@@ -226,7 +233,7 @@
                 <h6 class="card-text">Linear Array Target Motion Analysis Using POMDPs</h6>
                 <p class="card-text">
                   For our final project in AA 228/CS 238: Decision Making Under Uncertainty.  
-                </p>
+                </p><br>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="{{ url_for('docs', filename='aa228.pdf') }}">
@@ -247,14 +254,14 @@
                 <h6 class="card-text">Twitter Sentiment Analysis with Emojis</h6>
                 <p class="card-text">
                   For our final project in CS 224U: Natural Language Understanding.  
-                </p><br>
+                </p><br><br>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="{{ url_for('docs', filename='cs224u.pdf') }}">
                       <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;border-right:0px;">Paper</button>
                     </a>
                     <a href="https://github.com/dliedtka/twitter_emoji_sentiment">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;">Website</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;">Code</button>
                     </a>
                   </div>
                 </div>
@@ -268,14 +275,14 @@
                 <h6 class="card-text">A Reproduction of "A Longitudinal End-to-End View of the DNSSEC Ecosystem"</h6>
                 <p class="card-text">
                   For our final project in CS 244: Advanced Topics in Networking.
-                </p><br>
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <a href="{{ url_for('docs', filename='cs244.pdf') }}">
                       <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;border-right:0px;">Paper</button>
                     </a>
                     <a href="https://github.com/dliedtka/dnssec_reproduction">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;">Website</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;">Code</button>
                     </a>
                   </div>
                 </div>
@@ -283,9 +290,52 @@
             </div>
           </div>
         </div>
-        <!-- TODO: add a row, try to do 2 4 4 2 because only 2 papers left, align first row -->
-        <!-- add course button for these? -->
-        <!-- modify personal projects row... -->
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap" src="{{ url_for('images', filename='stanford.png') }}">
+              <div class="card-body">
+                <h6 class="card-text">Simulated Season</h6>
+                <p class="card-text">
+                  For my final project in CS 221: Artificial Intelligence: Principals and Techniques.  
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="{{ url_for('docs', filename='cs221.pdf') }}">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;border-right:0px;">Paper</button>
+                    </a>
+                    <a href="https://github.com/dliedtka/basketball">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;">Code</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap" src="{{ url_for('images', filename='stanford.png') }}">
+              <div class="card-body">
+                <h6 class="card-text">Headline Generator</h6>
+                <p class="card-text">
+                  For our final project in CS 230: Deep Learning.  
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="{{ url_for('docs', filename='cs230.pdf') }}">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;border-right:0px;">Paper</button>
+                    </a>
+                    <a href="https://github.com/dliedtka/headline_generation">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" style="border-radius:0px;">Code</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
         <br><br>
 
     </div>
