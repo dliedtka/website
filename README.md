@@ -1,6 +1,6 @@
 # website
 
-Flask application for personal website, [davidliedtka.com](davidliedtka.com).
+Flask application for personal website, [davidliedtka.com](http://davidliedtka.com).
 
 ## Installs
 
